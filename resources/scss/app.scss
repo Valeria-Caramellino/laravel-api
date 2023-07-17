@@ -1,0 +1,8 @@
+@import '~bootstrap/scss/bootstrap';
+
+.card-my{
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}
