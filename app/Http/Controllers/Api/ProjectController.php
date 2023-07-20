@@ -24,4 +24,13 @@ class ProjectController extends Controller
         ];
         return response()->json($response);
     }
+    public function totProjects(){
+
+        $projectsNum = Project::all()->count();
+        $response = [
+            "success" => true,
+            "results" => $projectsNum
+        ];
+        return response()->json($response);
+    }
 }
