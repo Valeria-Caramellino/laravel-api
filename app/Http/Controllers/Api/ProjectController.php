@@ -33,4 +33,12 @@ class ProjectController extends Controller
         ];
         return response()->json($response);
     }
+    public function list(){
+        $listProjects = Project::all();
+        $response = [
+            "success" => true,
+            "results" => $listProjects
+        ];
+        return response()->json($response);
+    }
 }
